@@ -28,6 +28,10 @@ jobs:
         with: 
           java-version: 1.8
 
+      # Run Lint
+      - name: Lint
+        run: bash ./gradlew lint
+        
       # Run unit test
       - name: Unit tests
         run: bash ./gradlew test --stacktrace
